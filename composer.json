@@ -30,7 +30,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/arnapou/gw2apiclient.git"
+            "url": "https://github.com/yukkona/gw2apiclient.git"
         }
     ],
     "require": {

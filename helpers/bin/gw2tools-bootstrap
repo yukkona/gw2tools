@@ -1,0 +1,12 @@
+#!/bin/bash
+
+composerw update
+chmod 777 ./var/*
+
+php bin/console doctrine:schema:update --force
+php bin/console gw2tool:populate en
+
+php bin/console cache:clear --env=prod
+php bin/console assetic:dump --env=prod
+
+chown www-data:www-data /srv/gw2tools

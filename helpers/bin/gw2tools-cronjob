@@ -1,0 +1,9 @@
+#!/bin/bash
+php bin/console gw2tool:populate en
+php bin/console gw2tool:populate fr
+php bin/console gw2tool:populate es
+php bin/console gw2tool:populate de
+
+php bin/console gw2tool:clean
+
+php bin/console gw2tool:statistics

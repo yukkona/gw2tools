@@ -55,7 +55,7 @@ class MongoService
     public function getClient()
     {
         if (empty($this->client)) {
-            $this->client = new MongoClient('mongodb://localhost:27017', [], [
+            $this->client = new MongoClient('mongodb://mongo:27017', [], [
                 'typeMap' => [
                     'root'     => 'array',
                     'document' => 'array',
